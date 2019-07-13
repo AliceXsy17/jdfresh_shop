@@ -836,7 +836,7 @@
     margin: 0 auto;
     line-height: 50px;
 }
-.host .right .bottom .right>div:first-child{
+.host .right .bottom .right .title{
     margin-top: 10px;
     color: #222222;
     font-size: 18px;
