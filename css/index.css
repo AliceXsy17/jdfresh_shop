@@ -935,19 +935,19 @@
 }
 .inspiration .jx_decoration{
   background: url(../imgs/599e7853N7bbe1ce0.png) no-repeat;
-  background-size: 78% 78%;
+  background-size: 100%;
 }
 .inspiration .hg_decoration{
     background: url(../imgs/599e781dN93a73aad.png) no-repeat;
-    background-size: 78% 78%;
+    background-size: 100%;
   }
 .inspiration .sy_decoration{
     background: url(../imgs/599e7890Nb5117daa.png) no-repeat;
-    background-size: 78% 78%;
+    background-size: 100%;
   }
 .inspiration .jk_decoration{
     background: url(../imgs/5a4094d3Nc8168196.png) no-repeat;
-    background-size: 78% 78%;
+    background-size: 100%;
 }
 .inspiration .left{
     width: 340px;
@@ -988,10 +988,44 @@
      height: 287px;
 	}
 .inspiration .jd_carousel .c {
+      float: left;
       width: 790px;
       height: 287px;
-	  float: left;
+      padding: 20px 25px 20px 25px;
+      border-bottom-right-radius: 50px;
+      background: #f6f6f5;
 	}
+.inspiration .jd_carousel .c>div {
+      width: 150px;
+    }
+.inspiration .jd_carousel .c .top {
+      width: 150px;
+      height: 140px;
+      margin-bottom: 20px;
+      transition: .5s;
+    } 
+.inspiration .jd_carousel .c .top:hover{
+    transform: translateY(-10px);
+    }   
+.inspiration .jd_carousel .c .middle {
+      height: 50px;
+      overflow: hidden;
+      font-size: 14px;
+      color: #222;
+      line-height: 1.7;
+    }
+.inspiration .jd_carousel .c .bottom {
+      height: 27px;
+    }
+.inspiration .jd_carousel .c .bottom .price {
+      color: #ff541f;
+      font-size: 18px;
+    } 
+.inspiration .jd_carousel .c .bottom .rating {
+      color: #909090;
+      font-size: 12px;
+      line-height: 27px;
+    }                                 
 .inspiration .jd_carousel .carousel_left, .jd_carousel .carousel_right{
      position: absolute;
      width: 20px;
@@ -1005,38 +1039,48 @@
 	}
 .inspiration .jd_carousel .carousel_left{
 	top: 115px;
-	left: 10px;
+	left: 0;
 	z-index: 2;
 	}
 .inspiration .jd_carousel .carousel_right{
 	top: 115px;
-    right: 10px;
+    right: 0;
     z-index: 2;
     }
 .inspiration .jd_carousel .left:hover, .inspiration .jd_carousel .right:hover{
     background: rgba(0,0,0,.6);
-        }
-
-.inspiration .panel{
-      position: absolute;
-      left: 370px;
-	  bottom: 20px;
-	  width: 75px;
-	  height: 10px;
-	}
-.inspiration .panel>div{
-	 float: left;
-	 width: 10px;
-	 height: 10px;
-	 margin-right: 5px;
-	 border-radius: 50%;
-	 background: rgba(255,255,255,.6);
-	}
-.inspiration .panel>div:last-child{
-	 margin-right: 0;
-	}
-
-    
-
-
+        }   
 /* 轮播图2结束 */
+.jd_fresh{
+    width: 1903px;
+    height: 822px;
+    background: #f0f0f8;
+}
+.jd_fresh>div{
+    width: 1190px;
+    height: 822px;
+    margin: 0 auto;
+    padding-top: 57px;
+}
+.jd_fresh .theme>div{
+    color: #222;
+}
+.jd_fresh .fresh_fruit{
+    width: 1190px;
+    height: 622px;
+    margin: 30px auto;
+    background: red;
+}
+.jd_fresh .fresh_fruit .top .left{
+    width: 200px;
+    height: 300px;
+    background: url(../imgs/5982d8c6N279ff1cf.png) no-repeat; 
+}
+.jd_fresh .fresh_fruit .top .middle{
+    width: 600px;
+    height: 300px;
+}
+.jd_fresh .fresh_fruit .top .right{
+    width: 430px;
+    height: 300px;
+}
