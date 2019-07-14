@@ -1878,10 +1878,10 @@
                 <div>INSPIRATION FRESH</div>
             </div>
             <ul class="choose_card list-unstyled d-flex justify-content-between">
-                <li class="card_active" toggle-target="jx_toggle">精选礼盒</li>
-                <li toggle-target="hg_toggle">火锅诱惑</li>
-                <li toggle-target="sy_toggle">深夜食堂</li>
-                <li toggle-target="jk_toggle">进口美食</li>
+                <li class="card_active" data-toggle="choice1" data-target="jx_toggle">精选礼盒</li>
+                <li data-toggle="choice2" data-target="hg_toggle">火锅诱惑</li>
+                <li data-toggle="choice3" data-target="sy_toggle">深夜食堂</li>
+                <li data-toggle="choice4" data-target="jk_toggle">进口美食</li>
             </ul>
             <div class="toggle_box" id="jx_toggle">
                 <div>
@@ -1894,17 +1894,12 @@
                         </div>
                         <div id = "jd_carousel2" class="right jd_carousel" data-container="carousel2">
                                 <div class="carousel_inner" data-inner="carousel_inner2">
-                                    <div class="c c1 " onclick="go1()"></div>
-                                    <div class="c c2" onclick="go2()"></div>
-                                    <div class="c c3" onclick="go3()"></div>
+                                    <div class="c bg-danger" onclick="go1()"></div>
+                                    <div class="c bg-primary" onclick="go2()"></div>
+                                    <div class="c bg-warning" onclick="go3()"></div>
                                 </div>
                                 <div class="carousel_left" data-left="left2">&lt;</div>
                                 <div class="carousel_right" data-right="right2">&gt;</div>
-                                <!-- <div class="panel">
-                                    <div data-choice="panel2"></div>
-                                    <div data-choice="panel2"></div>
-                                    <div data-choice="panel2"></div>
-                                </div>  -->
                             </div>
                     </div>
                 </div>
@@ -1912,62 +1907,69 @@
             <div class="toggle_box" id="hg_toggle">
                 <div>
                     <div class="decoration hg_decoration"></div>
+                    <div class="d-flex justify-content-between">
+                        <div class="left">
+                            <div class="title">火锅诱惑</div>
+                            <div class="for_border"></div>
+                            <div class="intro">不出门吃火锅。叫上几个好友，加上好吃的食物，热热闹闹涮起来。</div>
+                        </div>
+                        <div class="right jd_carousel" data-container="carousel3">
+                                <div class="carousel_inner" data-inner="carousel_inner3">
+                                    <div class="c bg-danger" onclick="go1()"></div>
+                                    <div class="c bg-primary" onclick="go2()"></div>
+                                    <div class="c bg-warning" onclick="go3()"></div>
+                                </div>
+                                <div class="carousel_left" data-left="left3">&lt;</div>
+                                <div class="carousel_right" data-right="right3">&gt;</div>
+                            </div>
+                    </div>                    
                 </div>
             </div>
             <div class="toggle_box" id="sy_toggle">
                 <div>
                     <div class="decoration sy_decoration"></div>
+                    <div class="d-flex justify-content-between">
+                        <div class="left">
+                            <div class="title">深夜食堂</div>
+                            <div class="for_border"></div>
+                            <div class="intro">食物无限时，想吃就吃。大排档吃夜宵，侃大山，夜晚不再孤独。</div>
+                        </div>
+                        <div class="right jd_carousel" data-container="carousel4">
+                                <div class="carousel_inner" data-inner="carousel_inner4">
+                                    <div class="c bg-danger" onclick="go1()"></div>
+                                    <div class="c bg-primary" onclick="go2()"></div>
+                                    <div class="c bg-warning" onclick="go3()"></div>
+                                </div>
+                                <div class="carousel_left" data-left="left4">&lt;</div>
+                                <div class="carousel_right" data-right="right4">&gt;</div>
+                            </div>
+                    </div>                    
                 </div>
             </div>
             <div class="toggle_box" id="jk_toggle">
                 <div>
                     <div class="decoration jk_decoration"></div>
+                    <div class="d-flex justify-content-between">
+                        <div class="left">
+                            <div class="title">进口美食</div>
+                            <div class="for_border"></div>
+                            <div class="intro">足不出户吃遍全球美味，尽享品质生活</div>
+                        </div>
+                        <div class="right jd_carousel" data-container="carousel5">
+                                <div class="carousel_inner" data-inner="carousel_inner5">
+                                    <div class="c bg-danger" onclick="go1()"></div>
+                                    <div class="c bg-primary" onclick="go2()"></div>
+                                    <div class="c bg-warning" onclick="go3()"></div>
+                                </div>
+                                <div class="carousel_left" data-left="left5">&lt;</div>
+                                <div class="carousel_right" data-right="right5">&gt;</div>
+                            </div>
+                    </div>                    
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/carousel.js"></script>
-    <script>
-    //页面初始化时轮播图1生效    
-    window.onload = function() {
-        var jd_carousel2 = null;
-        var jd_carousel1 = new Carousel(1, 800, 4, true);
-              jd_carousel1.init();
-    };
-     window.onscroll = function() {
-      var container1 = document.getElementById("jd_carousel1");
-      var container2 = document.getElementById("jd_carousel2");         
-      var distance1 = parseInt(container1.getBoundingClientRect().top);
-      var distance2 = parseInt(container2.getBoundingClientRect().top);
-      var windowHeight =  window.innerHeight;
-      //轮播图1生效，取消轮播图2，避免互相干扰   
-      if(distance1 < 200 && distance1 > -windowHeight){
-              jd_carousel2 = null;
-              var jd_carousel1 = new Carousel(1, 800, 4, true, true);
-              jd_carousel1.init();
-         };
-       //轮播图2生效，取消轮播图1，避免互相干扰                     
-          if(distance2 < windowHeight && distance2 > 175){
-             jd_carousel1 = null;
-             var jd_carousel2 = new Carousel(2, 790, 3, false, false);
-            jd_carousel2.init(); 
-          };  
-     };
-       
-
-
-
-        function go1() {
-            location.href = "https://www.baidu.com";
-        };
-        function go2() {
-            location.href = "http://www.tmooc.cn/";
-        };
-        function go3() {
-            location.href = "http://www.yangliyang.com/";
-        };
-
-    </script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>    
 </body>
-
 </html>

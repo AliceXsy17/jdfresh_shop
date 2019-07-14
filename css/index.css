@@ -896,10 +896,13 @@
     color: #222222;
     font-size: 20px;
 }
+.inspiration .choose_card li{
+   cursor: pointer;
+}
 .card_active{
     border-bottom: 4px solid #000;
 }
-#js_toggle{
+#jx_toggle{
     display: block;
 }
 #hg_toggle{
@@ -989,22 +992,6 @@
       height: 287px;
 	  float: left;
 	}
-.inspiration .jd_carousel .c1{
-	  background: url(../imgs/60343d7fb8fa746e.jpg) no-repeat;
-	  background-size: 100% 100%;
-	}
-.inspiration .jd_carousel .c2{
-		background: url(../imgs/329549a481bdcc26.jpg) no-repeat;
-		background-size: 100% 100%;
-	}
-.inspiration .jd_carousel .c3{
-		background: url(../imgs/8fbf76b3802424fa.jpg) no-repeat;
-		background-size: 100% 100%;
-    }
-.inspiration .jd_carousel .c4{
-        background: url(../imgs/60343d7fb8fa746e.jpg) no-repeat;
-        background-size: 100% 100%;
-      }      
 .inspiration .jd_carousel .carousel_left, .jd_carousel .carousel_right{
      position: absolute;
      width: 20px;
