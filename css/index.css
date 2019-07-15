@@ -532,6 +532,9 @@
     margin: 0 auto;
     background: url(../imgs/fresh_mod_head_bg.png) no-repeat;
 }
+.featured_fresh .theme{
+    margin-bottom: 50px;
+}
 .theme>div:first-child{
     width: 284px;
     height: 42px;
@@ -1065,22 +1068,206 @@
 .jd_fresh .theme>div{
     color: #222;
 }
-.jd_fresh .fresh_fruit{
+.fresh_fruit{
     width: 1190px;
-    height: 622px;
-    margin: 30px auto;
-    background: red;
+    height: 662px;
+    margin: 0 auto;
+    background: #fff;
 }
-.jd_fresh .fresh_fruit .top .left{
+.fresh_fruit .top .left{
     width: 200px;
     height: 300px;
+    padding: 0 20px;
     background: url(../imgs/5982d8c6N279ff1cf.png) no-repeat; 
 }
-.jd_fresh .fresh_fruit .top .middle{
+.jd_seafood .top .left{
+    background: url(../imgs/59886313N1622b0f9.png) no-repeat;   
+}
+.jd_meat .top .left{
+    background: url(../imgs/59886595Nc9fc959b.png) no-repeat;   
+}
+.fresh_fruit .top .left>div:first-child{
+   color: #fff;
+   font-size: 26px;
+   padding-top: 22px;
+   margin-bottom: 5px; 
+}
+.fresh_fruit .top .left>div:nth-child(2){
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 16px;
+ }
+.fresh_fruit .top .left>div:nth-child(3){
+   width: 63px;
+   height:0;
+   margin-bottom: 20px;
+   border-top: 4px solid #fff;
+ }
+.fresh_fruit .top .left>div:nth-child(4)>div{
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 14px;
+ }
+.fresh_fruit .top .left>div:nth-child(5){
+    padding: 0 22px 0 20px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    color: #00c65d;
+    background: #fff;
+    font-size: 16px;
+ }
+.fresh_fruit .top .left>div:nth-child(5) span{
+     margin-right: 38px;
+ }  
+.fresh_fruit .top .middle{
     width: 600px;
     height: 300px;
 }
-.jd_fresh .fresh_fruit .top .right{
-    width: 430px;
+.fresh_fruit .top .right{
+    width: 400px;
     height: 300px;
+}
+.fresh_fruit .middle_list>div{
+    box-sizing: border-box;
+    width: 198px;
+    height:280px;
+    padding: 30px 20px 0;
+}
+.fresh_fruit .middle_list>div .pic{
+    width: 150px;
+    height:150px;
+    transition: .5s;
+}
+.fresh_fruit .middle_list>div .pic:hover{
+   transform: translateY(-10px)
+}
+.fresh_fruit .middle_list>div .desc{
+    overflow: hidden;
+    height: 42px;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+.fresh_fruit .middle_list>div .desc a{
+   font-size: 14px;
+   color: #222;
+}
+.fresh_fruit .middle_list>div .desc a:hover{
+ text-decoration: none;
+ color: #00c65d;
+ }
+.fresh_fruit .middle_list>div .price{
+   color: #ff541f;
+   font-size: 18px;
+    }
+.fresh_fruit .bottom {
+    height: 82px;
+} 
+.fresh_fruit .bottom>div{
+    width: 119px;
+    height: 82px;
+    border: 1px solid #f0f0f8;
+}
+.fresh_fruit .bottom>div>div{
+   width: 60px;
+   height: 50px;
+   margin: 16px auto;
+   transition: .5s;
+}
+.fresh_fruit .bottom>div>div:hover{
+  transform: translateY(-6px)
+ }
+ .jd_seafood{
+     width: 1903px;
+     height: 727px;
+     padding-top: 34px;
+     background: #f0f0f8;
+ }
+ .jd_seafood>div{
+    width: 1190px;
+    height: 662px;
+    margin: 0 auto;
+}
+.jd_meat{
+    width: 1903px;
+    height: 727px;
+    padding-top: 34px;
+    background: #f0f0f8;
+}
+.jd_meat>div{
+   width: 1190px;
+   height: 662px;
+   margin: 0 auto;
+}
+.jd_drink{
+    width: 1903px;
+    height: 807px;
+    padding-top: 34px;
+    background: #f0f0f8;
+}
+.jd_drink>div{
+    width: 1190px;
+    height: 822px;
+    margin: 0 auto;
+}
+.jd_drink>div .left{
+    width:590px;
+    height: 662px;
+    background: #fff;
+}
+.jd_drink>div .right{
+    width:590px;
+    height: 662px;
+    background: #fff;
+}
+.jd_drink>div .left .top .left{
+    background: url(../imgs/5982e076N2f456b3e.png) no-repeat;
+}
+.jd_drink>div .right .top .left{
+    background: url(../imgs/5982e190Ncd9d504d.png) no-repeat;
+}
+.jd_drink>div .left .top .middle{
+    width: 390px;
+    height: 300px;
+    overflow: hidden;
+}
+.jd_drink>div .right .top .middle img{
+   width: 104%;
+   height: 100%;
+}
+.jd_drink>div .left .middle_list{
+    height: 280px;
+}
+.jd_drink>div .right .top .middle{
+    width: 390px;
+    height: 300px;
+    overflow: hidden;
+}
+.jd_seafood .top .left .more_catary{
+    color: #377dc5 !important;
+}
+.jd_meat .top .left .more_catary{
+    color: #f56a56 !important;
+}
+.jd_drink .top .left .more_catary{
+    color: #6b91ff !important;
+}
+.jd_drink .top .left .more_catary span{
+    margin-right: 9px!important;
+}
+.rating_carousel{
+    width: 1903px;
+    height: 430px;
+    padding-top: 50px;
+    background: url(../imgs/fresh_comments_bg.jpg) no-repeat;
+}
+.rating_carousel>div{
+    width: 1190px;
+    height: 430px;
+    margin: 0 auto;
+}
+.rating_carousel .theme>div:first-child{
+    color: #fff;
 }

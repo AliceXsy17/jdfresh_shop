@@ -3,7 +3,7 @@
     window.onload = function() {
         var jd_carousel2 = null;
         var jd_carousel1 = new Carousel(1, 800, 4, true);
-              jd_carousel1.init();
+            jd_carousel1.init();
     };
      window.onscroll = function() {
       var container1 = document.getElementById("jd_carousel1");
