@@ -963,6 +963,7 @@
     height: 684px;
     padding-top: 51px;
     background: url(../imgs/fresh_slim_body_bg.png) no-repeat center center;
+    background-size: 65%;
     background-color: #fff;
 }
 .inspiration>div{
@@ -1356,4 +1357,195 @@
 }
 .rating_carousel .theme>div:first-child{
     color: #fff;
+}
+.rating_carousel .theme{
+    margin-bottom: 50px;
+}
+/* 底部轮播图开始 */
+.rating_carousel .jd_carousel {
+    position: relative;
+	overflow: hidden;
+    width: 1190px;
+    height: 255px;
+}
+.rating_carousel .jd_carousel .carousel_inner{
+	 position: absolute;
+     width: 7140px;
+     height: 200px;
+	}
+.rating_carousel .jd_carousel .c {
+      float: left;
+      width: 1190px;
+      height: 200px;
+      padding-top: 30px;
+	}
+.rating_carousel .jd_carousel .c>div {
+      width: 383px;
+      height: 200px;
+      background: #f7f7fb;
+}
+.rating_carousel>div>.jd_carousel>.left, .rating_carousel>div>.jd_carousel>.right{
+     position: absolute;
+     width: 20px;
+     height: 50px;
+     background: #ccc;
+     text-align: center;
+     line-height: 50px;
+	 color: #fff;
+	 font-size: 16px;
+	 cursor: pointer;
+	}
+    .rating_carousel>div>.jd_carousel>.left{
+	top: 94px;
+	left: 0;
+	z-index: 2;
+	}
+.rating_carousel>div>.jd_carousel>.right{
+	top: 94px;
+    right: 0;
+    z-index: 2;
+    }
+.rating_carousel .panel{
+        position: absolute;
+        left: 582px;
+        bottom: 2px;
+        width: 75px;
+        height: 10px;
+      }
+.rating_carousel  .panel>div{
+       float: left;
+       width: 10px;
+       height: 10px;
+       margin-right: 5px;
+       border-radius: 50%;
+       background: rgba(255,255,255,.6);
+      }
+.rating_carousel  .panel>div:last-child{
+       margin-right: 0;
+      }
+.rating_carousel .panel .active{
+         background: #377dc5;
+      }    
+/*底部 轮播图结束 */
+.rating_carousel .jd_carousel .c>div{
+    padding: 0 20px 0 20px;
+}
+.rating_carousel .jd_carousel .c>div .top{
+   height: 83px;
+   margin-top: -29px;
+   margin-bottom: 5px;
+}
+.rating_carousel .jd_carousel .c>div .top>div:first-child{
+      width: 58px;
+      height: 58px;
+      margin: 0 auto;
+      background: #f7f7fb;
+      padding: 3px;
+      border-radius: 100%;
+ }
+ .rating_carousel .jd_carousel .c>div .top>div:first-child img{
+    border-radius: 100%;
+}
+.rating_carousel .jd_carousel .c>div .top>div:nth-child(2){
+    font-size: 14px;
+}
+.rating_carousel .jd_carousel .c>div .bottom{
+    height: 120px;
+}
+.rating_carousel .jd_carousel .c>div .bottom .left{
+    width: 120px;
+    height: 120px;   
+}
+.rating_carousel .jd_carousel .c>div .bottom .right{
+    width: 203px;
+    height: 120px;   
+}
+.rating_carousel .jd_carousel .c>div .bottom .right div img{
+    width: 85px;   
+}
+.rating_carousel .jd_carousel .c>div .bottom .right div:nth-child(2){
+   margin-top: 10px;
+   font-size: 12px;
+   color: #232321;
+}
+.rating_carousel .jd_carousel .c>div .bottom .right div:nth-child(3){
+    margin-top: 20px;
+    font-size: 12px;
+    color: #909090;
+ }
+ .jd_footer {
+     height: 480px;
+     padding-top: 50px;
+     background: #00c65d;
+ }
+.jd_footer .footer_advantage{
+  width: 1190px;  
+  height: 83px;
+  margin: 0 auto;
+  background: #00c65d;
+  border-bottom: 1px solid rgba(34,34,34,.2);
+ }
+.jd_footer .footer_advantage .top{
+   color: #fff;
+   font-size: 18px;
+   }
+.jd_footer .footer_advantage .bottom{
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+    }
+.jd_footer .footer_info{
+    width: 1190px;
+    margin: 39px auto;
+}
+.jd_footer .footer_info .left{
+    width: 400px;
+    padding-right: 73px;
+}
+.jd_footer .footer_info .right{
+    width: 790px;
+}
+.jd_footer .footer_info .ewm_text{
+   color: #00632e;
+   font-size: 16px;
+   margin-top: 10px;
+}
+.jd_footer .footer_info .title{
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 10px;
+ }
+.jd_footer .footer_info a{
+    color: rgba(255,255,255,.5);
+    font-size: 14px;
+    border: 0;
+}
+.jd_footer .footer_info a:hover{
+  text-decoration: none;
+}
+.jd_footer .copy_right{
+    font-size: 12px;
+    color: rgba(0,0,0,.5);
+}
+.jd_lift {
+    display: none;
+    position: fixed;
+    width: 40px;
+    height: 410px;
+    top: 334px;
+    right: 100px;
+    color: #fff;
+    font-size: 12px;
+}
+.jd_lift>div {
+  width: 40px;
+  height: 50px;
+  padding: 0 5px;
+  padding-top:5px;
+  margin-top: 2px;
+  text-align: center;
+  background: rgba(34,34,34,.4);
+  cursor: pointer;
+}
+.jd_lift .lift_active{
+    background: #00c65d;
 }

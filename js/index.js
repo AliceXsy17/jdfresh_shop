@@ -1,4 +1,5 @@
 ;(function(){
+    var $jd_lift = $(".jd_lift")
     //页面初始化时轮播图1生效    
     window.onload = function() {
         var jd_carousel2 = null;
@@ -7,9 +8,11 @@
     };
      window.onscroll = function() {
       var container1 = document.getElementById("jd_carousel1");
-      var container2 = document.getElementById("jd_carousel2");         
+      var container2 = document.getElementById("jd_carousel2");
+      var container3 = document.getElementById("jd_carousel3");          
       var distance1 = parseInt(container1.getBoundingClientRect().top);
       var distance2 = parseInt(container2.getBoundingClientRect().top);
+      var distance3 = parseInt(container3.getBoundingClientRect().top);
       var windowHeight =  window.innerHeight;
       //轮播图1生效，取消轮播图2，避免互相干扰   
       if(distance1 < 200 && distance1 > -windowHeight){
@@ -23,10 +26,54 @@
              var jd_carousel2 = new Carousel(2, 790, 3, false, false);
                jd_carousel2.init();            
           }; // if 
+      //底部轮播图生效，取消轮播图2，避免互相干扰
+      if(distance3 < 498 && distance3 > 160){
+        jd_carousel1 = null;
+        var jd_carousel6 = new Carousel(6, 1190, 6, true, true);
+          jd_carousel6.init();            
+     }; // if  
+     
+     //楼层效果
+     var scrollTop = document.documentElement.scrollTop || this.document.body.scrollTop;
+     //console.log(scrollTop);
+     if(scrollTop>=200) {
+        $jd_lift.css("display","block");
+     }else{
+        $(".jd_lift").css("display","none");  
+     }
      };//scroll
-       
-  //轮播图结束
 
+  //点播楼层滚动到响应楼层     
+  $jd_lift.click(function(e){
+      $(".jd_lift>div").removeClass("lift_active");
+    var item = $(e.target);
+    var pos = item.attr("data-position");
+    item.addClass("lift_active");
+    switch(pos) {
+        case "ts":
+        window.scrollTo(0,723);
+        break;
+        case "sl":
+        window.scrollTo(0,2068);
+        break;
+        case "jd":
+        window.scrollTo(0,2740);
+        break;
+        case "sx":
+        window.scrollTo(0,5822);
+        break;
+        case "kf":
+        window.scrollTo(0,0);
+        break;
+        case "gc":
+        window.scrollTo(0,0);
+        break;
+        case "db":
+        window.scrollTo(0,0);
+        break;                                     
+    }
+  });
+ //轮播图结束
 (function (nums){
 	//建立轮播图对象数组
 	var jd_carousels = [];

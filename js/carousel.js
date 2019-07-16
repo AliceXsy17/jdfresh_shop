@@ -5,7 +5,7 @@
   this.left = document.querySelector(`[data-left=left${id}]`);
   this.right = document.querySelector(`[data-right=right${id}]`);
   this.dots = document.querySelectorAll(`[data-choice=panel${id}]`);
-  this.timer;
+  this.timer = null;
   this.index = 0;
   this.width = width;
   this.length = length;
