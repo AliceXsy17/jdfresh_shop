@@ -1,5 +1,90 @@
+@media (max-width: 1920px) {
+    .jd_container{
+        min-width: 1903px;
+    }
+    .featured_bottom .healty{
+        left: 350px;
+    }
+    .featured_bottom .host{
+        left: 350px;
+    }
+    .advantage .orange{
+        left: 226px;
+    }
+    .featured_fresh .bg_mg{
+        right: 433px;
+    }        
+}
+@media (max-width: 1680px) {
+    .jd_container{
+        min-width: 1680px;
+    }
+    .featured_bottom .healty{
+        left: 246px;
+    }
+    .featured_bottom .host{
+        left: 246px;
+    }
+    .advantage .orange{
+        left: 114px;
+    }
+    .featured_fresh .bg_mg{
+        right: 330px;
+    }                    
+}
+@media (max-width: 1366px) {
+    .jd_container{
+        min-width: 1366px;
+    }
+    .featured_bottom .healty{
+        left: 90px;
+    }
+    .featured_bottom .host{
+        left: 90px;
+    } 
+    .advantage .orange{
+        left: -45px;
+    }
+    .featured_fresh .bg_mg{
+        right: 170px;
+    }                   
+}
+@media (max-width: 1280px) {
+    .jd_container{
+        min-width: 1280px;
+    }
+    .featured_bottom .healty{
+        left: 51px;
+    }
+    .featured_bottom .host{
+        left: 51px;
+    }
+    .advantage .orange{
+        left: -91px;
+    }
+    .featured_fresh .bg_mg{
+        right: 151px;
+    }                    
+}
+@media (max-width: 1200px) {
+    .jd_container{
+        min-width: 1200px;
+    }
+    .featured_bottom .healty{
+        left: 10px;
+    }
+    .featured_bottom .host{
+        left: 10px;
+    }
+    .advantage .orange{
+        left: -130px;
+    }
+    .featured_fresh .bg_mg{
+        right: 85px;
+    }                    
+}
 .header{
-    width: 1903px;
+    width: 100%;
     height: 31px;
     background: #e3e4e5;
 }
@@ -37,7 +122,7 @@
     text-decoration: none;
 }
 .search_container{
-    width: 1903px;
+    width: 100%;
 }
 .search_header{
     width: 1190px;
@@ -123,7 +208,7 @@
     line-height: 36px;
 }
 .my_nav_container{
-    width: 1903px;
+    width: 100%;
 }
 .my_nav{
     width: 1190px;
@@ -166,7 +251,7 @@
     line-height: 41px;
 }
 .my_carousel{
-    width: 1903px;
+    width: 100%;
     height: 400px;
     background: url(../imgs/59a3d65eNd604759b.png) no-repeat 50% 0;
     background-color: #f0f0f8;
@@ -324,7 +409,8 @@
 .jd_carousel1 .c {
       width: 800px;
       height: 400px;
-	  float: left;
+      float: left;
+      cursor: pointer;
 	}
 .jd_carousel1 .c1{
 	  background: url(../imgs/60343d7fb8fa746e.jpg) no-repeat;
@@ -446,14 +532,13 @@
 }
 .advantage {
     position: relative;
-    width: 1903px;
+    width: 100%;
     height: 100px;
     background: #f0f0f8;
 }
 .advantage .orange{
     position: absolute;
     top: -70px;
-    left: 226px;
     width: 174px;
     height: 120px;
     background: url(../imgs/sprite_fresh_bgs.png) no-repeat -335px -350px;
@@ -498,7 +583,7 @@
 }
 .featured_fresh {
     position: relative;
-    width: 1903px;
+    width: 100%;
     height: 440px;
     padding-top: 60px; 
     background: url(../imgs/fresh_unique_bg.jpg) no-repeat;
@@ -508,13 +593,12 @@
     width: 145px;
     height: 132px;
     top: 126px;
-    right: 433px;
     z-index: 10;
     background: url(../imgs/sprite_fresh_bgs.png) no-repeat -177px -350px;
 }
 .featured_bottom{
     position: relative;
-    width: 1903px;
+    width: 100%;
     height: 914px;
     background: #f0f0f8;
 }
@@ -555,7 +639,6 @@
 }
 .featured_bottom .healty {
     position: absolute;
-    left: 350px;
     top: -292px;
     width: 1190px;
     height: 584px;
@@ -563,7 +646,6 @@
 }
 .featured_bottom .host{
     position: absolute;
-    left: 350px;
     top: 306px;
     width: 1190px;
     height: 526px;
@@ -575,6 +657,7 @@
     margin-top: 235px;
     padding: 130px 20px 0;
     background: #f7f7f9;
+    cursor: pointer;
 }
 .healty .product_img{
     position: absolute;
@@ -876,7 +959,7 @@
     border-bottom-right-radius: 15px;
 }
 .inspiration {
-    width: 1903px;
+    width: 100%;
     height: 684px;
     padding-top: 51px;
     background: url(../imgs/fresh_slim_body_bg.png) no-repeat center center;
@@ -1005,6 +1088,7 @@
       width: 150px;
       height: 140px;
       margin-bottom: 20px;
+      cursor: pointer;
       transition: .5s;
     } 
 .inspiration .jd_carousel .c .top:hover{
@@ -1055,7 +1139,7 @@
         }   
 /* 轮播图2结束 */
 .jd_fresh{
-    width: 1903px;
+    width: 100%;
     height: 822px;
     background: #f0f0f8;
 }
@@ -1139,6 +1223,7 @@
 .fresh_fruit .middle_list>div .pic{
     width: 150px;
     height:150px;
+    cursor: pointer;
     transition: .5s;
 }
 .fresh_fruit .middle_list>div .pic:hover{
@@ -1175,12 +1260,13 @@
    height: 50px;
    margin: 16px auto;
    transition: .5s;
+   cursor: pointer;
 }
 .fresh_fruit .bottom>div>div:hover{
   transform: translateY(-6px)
  }
  .jd_seafood{
-     width: 1903px;
+    width: 100%;
      height: 727px;
      padding-top: 34px;
      background: #f0f0f8;
@@ -1191,7 +1277,7 @@
     margin: 0 auto;
 }
 .jd_meat{
-    width: 1903px;
+    width: 100%;
     height: 727px;
     padding-top: 34px;
     background: #f0f0f8;
@@ -1202,7 +1288,7 @@
    margin: 0 auto;
 }
 .jd_drink{
-    width: 1903px;
+    width: 100%;
     height: 807px;
     padding-top: 34px;
     background: #f0f0f8;
@@ -1258,7 +1344,7 @@
     margin-right: 9px!important;
 }
 .rating_carousel{
-    width: 1903px;
+    width: 100%;
     height: 430px;
     padding-top: 50px;
     background: url(../imgs/fresh_comments_bg.jpg) no-repeat;
